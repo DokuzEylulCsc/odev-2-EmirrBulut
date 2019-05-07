@@ -34,7 +34,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Btn_FakulteGetir = new System.Windows.Forms.Button();
-            this.Lst_Fakulteler = new System.Windows.Forms.ListBox();
+            this.FakultelerListesi = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Btn_TekrarFakulteEkle = new System.Windows.Forms.Button();
             this.Btn_FakulteEkle = new System.Windows.Forms.Button();
@@ -55,6 +55,7 @@
             this.Btn_Cıkıs.TabIndex = 15;
             this.Btn_Cıkıs.Text = "Cıkıs";
             this.Btn_Cıkıs.UseVisualStyleBackColor = true;
+            this.Btn_Cıkıs.Click += new System.EventHandler(this.Btn_Cıkıs_Click);
             // 
             // Btn_Ileri
             // 
@@ -64,6 +65,7 @@
             this.Btn_Ileri.TabIndex = 14;
             this.Btn_Ileri.Text = "İleri";
             this.Btn_Ileri.UseVisualStyleBackColor = true;
+            this.Btn_Ileri.Click += new System.EventHandler(this.Btn_Ileri_Click);
             // 
             // Txt_IslemId
             // 
@@ -84,7 +86,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.Btn_FakulteGetir);
-            this.groupBox2.Controls.Add(this.Lst_Fakulteler);
+            this.groupBox2.Controls.Add(this.FakultelerListesi);
             this.groupBox2.Location = new System.Drawing.Point(373, 94);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(439, 162);
@@ -100,15 +102,16 @@
             this.Btn_FakulteGetir.TabIndex = 1;
             this.Btn_FakulteGetir.Text = "Goster";
             this.Btn_FakulteGetir.UseVisualStyleBackColor = true;
+            this.Btn_FakulteGetir.Click += new System.EventHandler(this.Btn_FakulteGetir_Click);
             // 
-            // Lst_Fakulteler
+            // FakultelerListesi
             // 
-            this.Lst_Fakulteler.FormattingEnabled = true;
-            this.Lst_Fakulteler.ItemHeight = 19;
-            this.Lst_Fakulteler.Location = new System.Drawing.Point(24, 24);
-            this.Lst_Fakulteler.Name = "Lst_Fakulteler";
-            this.Lst_Fakulteler.Size = new System.Drawing.Size(339, 99);
-            this.Lst_Fakulteler.TabIndex = 0;
+            this.FakultelerListesi.FormattingEnabled = true;
+            this.FakultelerListesi.ItemHeight = 19;
+            this.FakultelerListesi.Location = new System.Drawing.Point(24, 24);
+            this.FakultelerListesi.Name = "FakultelerListesi";
+            this.FakultelerListesi.Size = new System.Drawing.Size(339, 99);
+            this.FakultelerListesi.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -133,6 +136,7 @@
             this.Btn_TekrarFakulteEkle.TabIndex = 5;
             this.Btn_TekrarFakulteEkle.Text = "Tekrar";
             this.Btn_TekrarFakulteEkle.UseVisualStyleBackColor = true;
+            this.Btn_TekrarFakulteEkle.Click += new System.EventHandler(this.Btn_TekrarFakulteEkle_Click);
             // 
             // Btn_FakulteEkle
             // 
@@ -142,6 +146,7 @@
             this.Btn_FakulteEkle.TabIndex = 4;
             this.Btn_FakulteEkle.Text = "Ekle";
             this.Btn_FakulteEkle.UseVisualStyleBackColor = true;
+            this.Btn_FakulteEkle.Click += new System.EventHandler(this.Btn_FakulteEkle_Click);
             // 
             // Txt_FakulteAdi
             // 
@@ -226,7 +231,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.ListBox Lst_Fakulteler;
+        public System.Windows.Forms.ListBox FakultelerListesi;
     }
 }
 

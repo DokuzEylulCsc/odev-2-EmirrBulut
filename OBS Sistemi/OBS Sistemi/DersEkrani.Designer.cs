@@ -45,13 +45,11 @@
             this.Btn_DersSil = new System.Windows.Forms.Button();
             this.Txt_DersSilID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Btn_TekrarDersEkle = new System.Windows.Forms.Button();
             this.Btn_DersEkle = new System.Windows.Forms.Button();
-            this.Txt_VerenHocaninAdi = new System.Windows.Forms.TextBox();
             this.Txt_DersAdi = new System.Windows.Forms.TextBox();
             this.Txt_DersId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -222,15 +220,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Ders ID:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 144);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 19);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "O. Gorevlisinin Adı:";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.listBox1);
@@ -254,7 +243,6 @@
             // 
             this.groupBox1.Controls.Add(this.Btn_TekrarDersEkle);
             this.groupBox1.Controls.Add(this.Btn_DersEkle);
-            this.groupBox1.Controls.Add(this.Txt_VerenHocaninAdi);
             this.groupBox1.Controls.Add(this.Txt_DersAdi);
             this.groupBox1.Controls.Add(this.Txt_DersId);
             this.groupBox1.Controls.Add(this.label2);
@@ -265,10 +253,11 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ders Ekle";
+//            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Btn_TekrarDersEkle
             // 
-            this.Btn_TekrarDersEkle.Location = new System.Drawing.Point(46, 141);
+            this.Btn_TekrarDersEkle.Location = new System.Drawing.Point(46, 120);
             this.Btn_TekrarDersEkle.Name = "Btn_TekrarDersEkle";
             this.Btn_TekrarDersEkle.Size = new System.Drawing.Size(86, 33);
             this.Btn_TekrarDersEkle.TabIndex = 6;
@@ -277,19 +266,12 @@
             // 
             // Btn_DersEkle
             // 
-            this.Btn_DersEkle.Location = new System.Drawing.Point(175, 140);
+            this.Btn_DersEkle.Location = new System.Drawing.Point(175, 119);
             this.Btn_DersEkle.Name = "Btn_DersEkle";
             this.Btn_DersEkle.Size = new System.Drawing.Size(86, 33);
             this.Btn_DersEkle.TabIndex = 5;
             this.Btn_DersEkle.Text = "Ekle";
             this.Btn_DersEkle.UseVisualStyleBackColor = true;
-            // 
-            // Txt_VerenHocaninAdi
-            // 
-            this.Txt_VerenHocaninAdi.Location = new System.Drawing.Point(175, 107);
-            this.Txt_VerenHocaninAdi.Name = "Txt_VerenHocaninAdi";
-            this.Txt_VerenHocaninAdi.Size = new System.Drawing.Size(86, 27);
-            this.Txt_VerenHocaninAdi.TabIndex = 4;
             // 
             // Txt_DersAdi
             // 
@@ -334,11 +316,10 @@
             this.Controls.Add(this.Txt_Dersİslem);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DersEkrani";
             this.Text = "DersEkrani";
             this.groupBox4.ResumeLayout(false);
@@ -372,13 +353,11 @@
         private System.Windows.Forms.Button Btn_DersSil;
         private System.Windows.Forms.TextBox Txt_DersSilID;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Btn_TekrarDersEkle;
         private System.Windows.Forms.Button Btn_DersEkle;
-        private System.Windows.Forms.TextBox Txt_VerenHocaninAdi;
         private System.Windows.Forms.TextBox Txt_DersAdi;
         private System.Windows.Forms.TextBox Txt_DersId;
         private System.Windows.Forms.Label label2;

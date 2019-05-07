@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Btn_HocalariGoster = new System.Windows.Forms.Button();
+            this.KayıtliOgetimGorevlileri = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Btn_TekrarHocaSil = new System.Windows.Forms.Button();
             this.Btn_OGSil = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Btn_HocalariGoster = new System.Windows.Forms.Button();
             this.Btn_Ileri = new System.Windows.Forms.Button();
             this.Txt_HocaIslemID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,22 +57,32 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.Btn_HocalariGoster);
-            this.groupBox3.Controls.Add(this.listBox1);
+            this.groupBox3.Controls.Add(this.KayıtliOgetimGorevlileri);
             this.groupBox3.Location = new System.Drawing.Point(310, 31);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(250, 237);
+            this.groupBox3.Size = new System.Drawing.Size(331, 237);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Kayıtlı Ogretim Gorevlileri";
+            this.groupBox3.Text = "Ogretim Gorevlileri";
             // 
-            // listBox1
+            // Btn_HocalariGoster
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 19;
-            this.listBox1.Location = new System.Drawing.Point(36, 38);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(169, 118);
-            this.listBox1.TabIndex = 0;
+            this.Btn_HocalariGoster.Location = new System.Drawing.Point(36, 183);
+            this.Btn_HocalariGoster.Name = "Btn_HocalariGoster";
+            this.Btn_HocalariGoster.Size = new System.Drawing.Size(265, 31);
+            this.Btn_HocalariGoster.TabIndex = 10;
+            this.Btn_HocalariGoster.Text = "Goster";
+            this.Btn_HocalariGoster.UseVisualStyleBackColor = true;
+            this.Btn_HocalariGoster.Click += new System.EventHandler(this.Btn_HocalariGoster_Click);
+            // 
+            // KayıtliOgetimGorevlileri
+            // 
+            this.KayıtliOgetimGorevlileri.FormattingEnabled = true;
+            this.KayıtliOgetimGorevlileri.ItemHeight = 19;
+            this.KayıtliOgetimGorevlileri.Location = new System.Drawing.Point(10, 38);
+            this.KayıtliOgetimGorevlileri.Name = "KayıtliOgetimGorevlileri";
+            this.KayıtliOgetimGorevlileri.Size = new System.Drawing.Size(315, 118);
+            this.KayıtliOgetimGorevlileri.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -82,7 +92,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(28, 205);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(276, 147);
+            this.groupBox2.Size = new System.Drawing.Size(276, 119);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ogretim Gorevlisi Sil";
@@ -95,6 +105,7 @@
             this.Btn_TekrarHocaSil.TabIndex = 10;
             this.Btn_TekrarHocaSil.Text = "Tekrar";
             this.Btn_TekrarHocaSil.UseVisualStyleBackColor = true;
+            this.Btn_TekrarHocaSil.Click += new System.EventHandler(this.Btn_TekrarHocaSil_Click);
             // 
             // Btn_OGSil
             // 
@@ -104,6 +115,7 @@
             this.Btn_OGSil.TabIndex = 9;
             this.Btn_OGSil.Text = "Sil";
             this.Btn_OGSil.UseVisualStyleBackColor = true;
+            this.Btn_OGSil.Click += new System.EventHandler(this.Btn_OGSil_Click);
             // 
             // Txt_HocaIDSil
             // 
@@ -146,6 +158,7 @@
             this.Btn_TekrarHocaEkle.TabIndex = 7;
             this.Btn_TekrarHocaEkle.Text = "Tekrar";
             this.Btn_TekrarHocaEkle.UseVisualStyleBackColor = true;
+            this.Btn_TekrarHocaEkle.Click += new System.EventHandler(this.Btn_TekrarHocaEkle_Click);
             // 
             // Btn_HocaEkle
             // 
@@ -155,6 +168,7 @@
             this.Btn_HocaEkle.TabIndex = 6;
             this.Btn_HocaEkle.Text = "Ekle";
             this.Btn_HocaEkle.UseVisualStyleBackColor = true;
+            this.Btn_HocaEkle.Click += new System.EventHandler(this.Btn_HocaEkle_Click);
             // 
             // Txt_HocaSoyadi
             // 
@@ -204,33 +218,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID :";
             // 
-            // Btn_HocalariGoster
-            // 
-            this.Btn_HocalariGoster.Location = new System.Drawing.Point(36, 183);
-            this.Btn_HocalariGoster.Name = "Btn_HocalariGoster";
-            this.Btn_HocalariGoster.Size = new System.Drawing.Size(169, 31);
-            this.Btn_HocalariGoster.TabIndex = 10;
-            this.Btn_HocalariGoster.Text = "Goster";
-            this.Btn_HocalariGoster.UseVisualStyleBackColor = true;
-            this.Btn_HocalariGoster.Click += new System.EventHandler(this.Btn_HocalariGoster_Click);
-            // 
             // Btn_Ileri
             // 
-            this.Btn_Ileri.Location = new System.Drawing.Point(481, 326);
+            this.Btn_Ileri.Location = new System.Drawing.Point(548, 293);
             this.Btn_Ileri.Name = "Btn_Ileri";
-            this.Btn_Ileri.Size = new System.Drawing.Size(101, 31);
+            this.Btn_Ileri.Size = new System.Drawing.Size(93, 31);
             this.Btn_Ileri.TabIndex = 12;
             this.Btn_Ileri.Text = "İleri";
             this.Btn_Ileri.UseVisualStyleBackColor = true;
-            this.Btn_Ileri.Click += new System.EventHandler(this.button1_Click);
+            this.Btn_Ileri.Click += new System.EventHandler(this.Btn_Ileri_Click);
             // 
             // Txt_HocaIslemID
             // 
-            this.Txt_HocaIslemID.Location = new System.Drawing.Point(387, 293);
+            this.Txt_HocaIslemID.Location = new System.Drawing.Point(321, 293);
             this.Txt_HocaIslemID.Name = "Txt_HocaIslemID";
             this.Txt_HocaIslemID.Size = new System.Drawing.Size(100, 27);
             this.Txt_HocaIslemID.TabIndex = 11;
-            this.Txt_HocaIslemID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -240,22 +243,22 @@
             this.label5.Size = new System.Drawing.Size(255, 19);
             this.label5.TabIndex = 10;
             this.label5.Text = "İslem yapmak istediginiz ID\' yi girin :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Btn_Cikis
             // 
-            this.Btn_Cikis.Location = new System.Drawing.Point(320, 326);
+            this.Btn_Cikis.Location = new System.Drawing.Point(443, 293);
             this.Btn_Cikis.Name = "Btn_Cikis";
-            this.Btn_Cikis.Size = new System.Drawing.Size(101, 31);
+            this.Btn_Cikis.Size = new System.Drawing.Size(86, 31);
             this.Btn_Cikis.TabIndex = 13;
             this.Btn_Cikis.Text = "Cıkıs";
             this.Btn_Cikis.UseVisualStyleBackColor = true;
+            this.Btn_Cikis.Click += new System.EventHandler(this.Btn_Cikis_Click);
             // 
             // OgretimUyeleriEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 379);
+            this.ClientSize = new System.Drawing.Size(671, 356);
             this.Controls.Add(this.Btn_Cikis);
             this.Controls.Add(this.Btn_Ileri);
             this.Controls.Add(this.Txt_HocaIslemID);
@@ -264,9 +267,10 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OgretimUyeleriEkrani";
             this.Text = "OgretimUyeleriEkrani";
+//            this.Load += new System.EventHandler(this.OgretimUyeleriEkrani_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -281,7 +285,7 @@
 
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button Btn_HocalariGoster;
-        public System.Windows.Forms.ListBox listBox1;
+        public System.Windows.Forms.ListBox KayıtliOgetimGorevlileri;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button Btn_TekrarHocaSil;
         private System.Windows.Forms.Button Btn_OGSil;

@@ -149,6 +149,7 @@
             this.Btn_Cıkıs.TabIndex = 14;
             this.Btn_Cıkıs.Text = "Cıkıs";
             this.Btn_Cıkıs.UseVisualStyleBackColor = true;
+            this.Btn_Cıkıs.Click += new System.EventHandler(this.Btn_Cıkıs_Click);
             // 
             // Btn_Ileri
             // 
@@ -158,6 +159,7 @@
             this.Btn_Ileri.TabIndex = 13;
             this.Btn_Ileri.Text = "İleri";
             this.Btn_Ileri.UseVisualStyleBackColor = true;
+            this.Btn_Ileri.Click += new System.EventHandler(this.Btn_Ileri_Click);
             // 
             // Txt_Bolumİslem
             // 
@@ -165,6 +167,7 @@
             this.Txt_Bolumİslem.Name = "Txt_Bolumİslem";
             this.Txt_Bolumİslem.Size = new System.Drawing.Size(100, 27);
             this.Txt_Bolumİslem.TabIndex = 12;
+            this.Txt_Bolumİslem.TextChanged += new System.EventHandler(this.Txt_Bolumİslem_TextChanged);
             // 
             // label6
             // 
@@ -196,6 +199,7 @@
             this.Btn_TekrarBolumSil.TabIndex = 6;
             this.Btn_TekrarBolumSil.Text = "Tekrar";
             this.Btn_TekrarBolumSil.UseVisualStyleBackColor = true;
+            this.Btn_TekrarBolumSil.Click += new System.EventHandler(this.Btn_TekrarBolumSil_Click);
             // 
             // Btn_BolumSil
             // 
@@ -205,6 +209,7 @@
             this.Btn_BolumSil.TabIndex = 5;
             this.Btn_BolumSil.Text = "Sil";
             this.Btn_BolumSil.UseVisualStyleBackColor = true;
+            this.Btn_BolumSil.Click += new System.EventHandler(this.Btn_BolumSil_Click);
             // 
             // Txt_BolumSil
             // 
@@ -241,6 +246,7 @@
             this.Btn_BolumleriGoster.TabIndex = 6;
             this.Btn_BolumleriGoster.Text = "Goster";
             this.Btn_BolumleriGoster.UseVisualStyleBackColor = true;
+            this.Btn_BolumleriGoster.Click += new System.EventHandler(this.Btn_BolumleriGoster_Click);
             // 
             // Lst_KayitliBolumler
             // 
@@ -274,6 +280,7 @@
             this.Btn_TekrarBolumEkle.TabIndex = 5;
             this.Btn_TekrarBolumEkle.Text = "Tekrar";
             this.Btn_TekrarBolumEkle.UseVisualStyleBackColor = true;
+            this.Btn_TekrarBolumEkle.Click += new System.EventHandler(this.Btn_TekrarBolumEkle_Click);
             // 
             // Btn_BolumEkle
             // 
@@ -283,6 +290,7 @@
             this.Btn_BolumEkle.TabIndex = 4;
             this.Btn_BolumEkle.Text = "Ekle";
             this.Btn_BolumEkle.UseVisualStyleBackColor = true;
+            this.Btn_BolumEkle.Click += new System.EventHandler(this.Btn_BolumEkle_Click);
             // 
             // Txt_BolumAdi
             // 

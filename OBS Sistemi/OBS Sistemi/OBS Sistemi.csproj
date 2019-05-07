@@ -46,30 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bolum.cs" />
     <Compile Include="BolumEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BolumEkrani.Designer.cs">
       <DependentUpon>BolumEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ders.cs" />
     <Compile Include="DersEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DersEkrani.Designer.cs">
       <DependentUpon>DersEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoktoraOgrencisi.cs" />
+    <Compile Include="Fakulte.cs" />
     <Compile Include="FakulteEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FakulteEkrani.Designer.cs">
       <DependentUpon>FakulteEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="LisansOgrencisi.cs" />
+    <Compile Include="Ogrenci.cs" />
     <Compile Include="OgrenciEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OgrenciEkrani.Designer.cs">
       <DependentUpon>OgrenciEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="OgretimUyeleri.cs" />
     <Compile Include="OgretimUyeleriEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +85,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Universite.cs" />
+    <Compile Include="YuksekLisansOgrencisi.cs" />
     <EmbeddedResource Include="BolumEkrani.resx">
       <DependentUpon>BolumEkrani.cs</DependentUpon>
     </EmbeddedResource>
