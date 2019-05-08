@@ -45,7 +45,7 @@ namespace OBS_Sistemi
         {
             if (Txt_HocaIDSil.Text != "")
             {
-                Universite.Fakulteler[FakulteEkrani.FakulteIslemID].Bolumler[BolumEkrani.BolumIslemID].OgretimGorevlisiSil(Convert.ToInt16(Txt_HocaID.Text));
+                Universite.Fakulteler[FakulteEkrani.FakulteIslemID].Bolumler[BolumEkrani.BolumIslemID].OgretimGorevlisiSil(Convert.ToInt16(Txt_HocaIDSil.Text));
             }
             else
             {
@@ -85,7 +85,7 @@ namespace OBS_Sistemi
         {
             if (Txt_HocaIslemID.Text != "")
             {
-                HocaIslemID = Convert.ToInt16(Txt_HocaIslemID);
+                HocaIslemID = Convert.ToInt16(Txt_HocaIslemID.Text);
                 OgretimUyeleri gereksiz;
                 if (Universite.Fakulteler[FakulteEkrani.FakulteIslemID].Bolumler[BolumEkrani.BolumIslemID].KayitliOgretimUyeleri.TryGetValue(HocaIslemID,out gereksiz))
                 {

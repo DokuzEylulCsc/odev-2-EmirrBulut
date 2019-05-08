@@ -11,7 +11,6 @@ namespace OBS_Sistemi
         private int dersid;
         private string dersadi;
         
-
         public int DersID
         {
             get { return dersid; }
@@ -22,7 +21,6 @@ namespace OBS_Sistemi
             get { return dersadi; }
             set { dersadi = value; }
         }
-       
 
         public Ders(int ID,string Ad)
         {

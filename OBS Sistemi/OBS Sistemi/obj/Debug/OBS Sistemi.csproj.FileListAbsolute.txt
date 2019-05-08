@@ -12,3 +12,17 @@ C:\Users\EMIR\Desktop\odev-2-EmirrBulut\OBS Sistemi\OBS Sistemi\bin\Debug\OBS Si
 C:\Users\EMIR\Desktop\odev-2-EmirrBulut\OBS Sistemi\OBS Sistemi\bin\Debug\OBS Sistemi.pdb
 C:\Users\EMIR\Desktop\odev-2-EmirrBulut\OBS Sistemi\OBS Sistemi\obj\Debug\OBS Sistemi.exe
 C:\Users\EMIR\Desktop\odev-2-EmirrBulut\OBS Sistemi\OBS Sistemi\obj\Debug\OBS Sistemi.pdb
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS Sistemi.csprojAssemblyReference.cache
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS_Sistemi.BolumEkrani.resources
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS_Sistemi.DersEkrani.resources
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS_Sistemi.FakulteEkrani.resources
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS_Sistemi.OgrenciEkrani.resources
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS_Sistemi.OgretimUyeleriEkrani.resources
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS_Sistemi.Properties.Resources.resources
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS Sistemi.csproj.GenerateResource.cache
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS Sistemi.csproj.CoreCompileInputs.cache
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS Sistemi.exe
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\obj\Debug\OBS Sistemi.pdb
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\bin\Debug\OBS Sistemi.exe.config
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\bin\Debug\OBS Sistemi.exe
+C:\Users\EMIR\Desktop\odev-2-EmirrBulut - Kopya\OBS Sistemi\OBS Sistemi\bin\Debug\OBS Sistemi.pdb

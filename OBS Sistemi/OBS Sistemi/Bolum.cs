@@ -59,7 +59,7 @@ namespace OBS_Sistemi
             }
         }
 
-        public void DersEkle(int DersID,string DersAdi,string HocaAdi)
+        public void DersEkle(int DersID,string DersAdi)
         {
             try
             {
@@ -71,5 +71,19 @@ namespace OBS_Sistemi
                 throw;
             }
         }
+
+        public void DersSil(int DersID)
+        {
+            try
+            {
+                KayıtlıDersler.Remove(DersID);
+            }
+            catch (ArgumentException)
+            {
+
+                throw new ArgumentException("Silmek istediginiz ders bulunamadı !!");
+            }
+        }
+
     }
 }
