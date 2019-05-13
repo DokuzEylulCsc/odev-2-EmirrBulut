@@ -32,7 +32,7 @@ namespace OBS_Sistemi
             bolumadi = Ad;
         }
 
-        public void OgretimGorevlisiEkle(int ID,string Ad,string Soyad)
+        public void OgretimGorevlisiEkle(int ID,string Ad,string Soyad) // Dictionarye ogretim gorevlisi ekliyoruz
         {
             try
             {
@@ -46,7 +46,7 @@ namespace OBS_Sistemi
             }
         }
 
-        public void OgretimGorevlisiSil(int ID)
+        public void OgretimGorevlisiSil(int ID) //Id yardımıyla ogretım gorevlisi siliyoruz.
         {
             try
             {
@@ -59,7 +59,7 @@ namespace OBS_Sistemi
             }
         }
 
-        public void DersEkle(int DersID,string DersAdi)
+        public void DersEkle(int DersID,string DersAdi) // Ders eklemeyi saglayan metot
         {
             try
             {
@@ -72,7 +72,7 @@ namespace OBS_Sistemi
             }
         }
 
-        public void DersSil(int DersID)
+        public void DersSil(int DersID) // Id yardımıyla ders sildigimiz metot
         {
             try
             {
@@ -85,10 +85,7 @@ namespace OBS_Sistemi
             }
         }
 
-        public void BolumeOgrenciEkle(int OgrID,string OgrAd,string OgrSoyad,string OGrSoyad)
-        {
-
-        }
+       
 
     }
 }

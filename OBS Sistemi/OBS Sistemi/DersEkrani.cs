@@ -111,11 +111,6 @@ namespace OBS_Sistemi
 
         }
 
-        private void Btn_OGAta_Click(object sender, EventArgs e)
-        {
-            // Burayı Doldurmalısın !!!!!!!!!!!!!!!!!!!!!!!!!!
-        }
-
         private void Btn_Bilgilendirme_Click(object sender, EventArgs e)
         {
             BilgilendirmeFormu b = new BilgilendirmeFormu();

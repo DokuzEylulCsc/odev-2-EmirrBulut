@@ -30,7 +30,7 @@ namespace OBS_Sistemi
             dersadi = Ad;
         }
 
-        public void DerseOgrenciEkle(int OgrId,string OgrAd,string OgrSoyad,string OgrBolum,string belirtec)
+        public void DerseOgrenciEkle(int OgrId,string OgrAd,string OgrSoyad,string OgrBolum,string belirtec) // Derse ogrenci ekleme metodu
         {
             try
             {
@@ -53,7 +53,7 @@ namespace OBS_Sistemi
             }
         }
 
-        public void DerstenOgrenciSi(int OgrID)
+        public void DerstenOgrenciSi(int OgrID) // Dersten ıd ile ogrenci silebiliyoruz
         {
             try
             {

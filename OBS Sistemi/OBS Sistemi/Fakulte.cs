@@ -9,6 +9,7 @@ namespace OBS_Sistemi
     class Fakulte
     {
         public Dictionary<int, Bolum> Bolumler = new Dictionary<int, Bolum>();
+
         private int fakulteid;
         private string fakultead;
 
@@ -29,7 +30,7 @@ namespace OBS_Sistemi
             fakultead = Ad;
         }
 
-        public void BolumEkle(int BolumID,string BolumAd)
+        public void BolumEkle(int BolumID,string BolumAd) // Bolum ekleme metodu
         {
             try
             {
@@ -42,7 +43,7 @@ namespace OBS_Sistemi
             }
         }
 
-        public void BolumSil(int BolumID)
+        public void BolumSil(int BolumID) // Dictionaryden ıd yardımıyla bolum sılme islemi.
         {
             try
             {

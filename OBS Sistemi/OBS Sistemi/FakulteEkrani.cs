@@ -22,7 +22,7 @@ namespace OBS_Sistemi
         public static int FakulteIslemID;
         bool flag = false;
 
-        private void Btn_FakulteEkle_Click(object sender, EventArgs e)
+        private void Btn_FakulteEkle_Click(object sender, EventArgs e) // fakulte ekleme metodunu cagırıyoruz.
         {
             if (Txt_FakulteID.Text != "" && Txt_FakulteAdi.Text != "")
             {
@@ -34,7 +34,7 @@ namespace OBS_Sistemi
             }
         }
 
-        private void Btn_TekrarFakulteEkle_Click(object sender, EventArgs e)
+        private void Btn_TekrarFakulteEkle_Click(object sender, EventArgs e) // Textboxları temızlıyoruz tekrar eklerken tek tek sılmekle ugrasmamak ıcın 
         {
             Txt_FakulteID.Text = "";
             Txt_FakulteAdi.Text = "";
@@ -63,7 +63,7 @@ namespace OBS_Sistemi
             }
         }
 
-        private void Btn_Ileri_Click(object sender, EventArgs e)
+        private void Btn_Ileri_Click(object sender, EventArgs e) // Bir sonraki forma gecebilmeyi saglama butonu
         {
             if (Txt_IslemId.Text != "")
             {
@@ -88,7 +88,7 @@ namespace OBS_Sistemi
 
         }
 
-        private void Btn_Bilgilendirme_Click(object sender, EventArgs e)
+        private void Btn_Bilgilendirme_Click(object sender, EventArgs e) // Bilgilendirme formuna erisebilmeyi saglayan buton
         {
             BilgilendirmeFormu b = new BilgilendirmeFormu();
             b.Show();
