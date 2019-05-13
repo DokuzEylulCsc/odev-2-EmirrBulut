@@ -24,7 +24,7 @@ namespace OBS_Sistemi
 
         private void Btn_OgrenciEkle_Click(object sender, EventArgs e)
         {
-            if (Txt_OgrenciAdi.Text != "" && Txt_OgrenciBolumu.Text != "" && Txt_OgrenciID.Text != "" && Txt_OgrenciSoyadi.Text != "")
+            if ((Txt_OgrenciAdi.Text != "" && Txt_OgrenciBolumu.Text != "" && Txt_OgrenciID.Text != "" && Txt_OgrenciSoyadi.Text != "") && (Rd_Doktora.Checked == true || Rd_Lisans.Checked == true || Rd_Yuksek.Checked == true)) 
             {
                 if (Rd_Lisans.Checked == true)
                 {

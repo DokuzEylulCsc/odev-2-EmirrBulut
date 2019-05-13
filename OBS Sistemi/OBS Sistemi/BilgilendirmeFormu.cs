@@ -17,6 +17,7 @@ namespace OBS_Sistemi
             InitializeComponent();
         }
         public int BFakulteID, BBolum;
+        
 
         private void Txt_BilgilendirmeFakulteID_TextChanged(object sender, EventArgs e)
         {
@@ -43,6 +44,7 @@ namespace OBS_Sistemi
         private void Btn_BilgilendirmeBolumler_Click(object sender, EventArgs e)
         {
             Lst_BilgilendirmeBolumler.Items.Clear();
+            BFakulteID = Convert.ToInt16(Txt_BilgilendirmeFakulteID.Text);
             try
             {
                 foreach (Bolum item in Universite.Fakulteler[BFakulteID].Bolumler.Values)
@@ -60,6 +62,7 @@ namespace OBS_Sistemi
         private void Btn_OgrencileriGoster_Click(object sender, EventArgs e)
         {
             Lst_BolumunOgr.Items.Clear();
+            BFakulteID = Convert.ToInt16(Txt_BilgilendirmeFakulteID.Text);
             try
             {
                 foreach (Ogrenci item in Universite.Fakulteler[BFakulteID].Bolumler[BBolum].BolumeKayitliOgrenciler.Values)
@@ -74,9 +77,20 @@ namespace OBS_Sistemi
             }
         }
 
+        private void Btn_BilgilendirmeDersOgrencileri_Click(object sender, EventArgs e)
+        {
+            BFakulteID = Convert.ToInt16(Txt_BilgilendirmeFakulteID.Text);
+            BBolum = Convert.ToInt16(Txt_BilgilendirmeBolumID.Text);
+            foreach (Ogrenci item in Universite.Fakulteler[BFakulteID].Bolumler[BBolum].)
+            {
+
+            }
+        }
+
         private void Btn_HocalarıGoster_Click(object sender, EventArgs e)
         {          
             Lst_BolumunOG.Items.Clear();
+            BFakulteID = Convert.ToInt16(Txt_BilgilendirmeFakulteID.Text);
             try
             {
                 foreach (OgretimUyeleri item in Universite.Fakulteler[BFakulteID].Bolumler[BBolum].KayitliOgretimUyeleri.Values)
