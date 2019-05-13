@@ -16,6 +16,7 @@ namespace OBS_Sistemi
         {
             InitializeComponent();
         }
+
         Universite uni = Universite.Instance;
         BolumEkrani b = new BolumEkrani();
         public static int FakulteIslemID;
@@ -51,7 +52,7 @@ namespace OBS_Sistemi
             {
                 foreach (Fakulte item in Universite.Fakulteler.Values)
                 {
-                    FakultelerListesi.Items.Add(item.FakulteId  + " - " + item.FakulteAd);
+                    FakultelerListesi.Items.Add("Fakulte ID :" + " " + item.FakulteId  + "  " + " ---- " +"Fakulte Adı :"  + "  " + item.FakulteAd);
                    
                 }
             }
@@ -87,6 +88,10 @@ namespace OBS_Sistemi
 
         }
 
- 
+        private void Btn_Bilgilendirme_Click(object sender, EventArgs e)
+        {
+            BilgilendirmeFormu b = new BilgilendirmeFormu();
+            b.Show();
+        }
     }
 }

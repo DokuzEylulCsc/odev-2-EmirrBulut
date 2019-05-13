@@ -85,5 +85,10 @@ namespace OBS_Sistemi
             }
         }
 
+        public void BolumeOgrenciEkle(int OgrID,string OgrAd,string OgrSoyad,string OGrSoyad)
+        {
+
+        }
+
     }
 }

@@ -17,6 +17,8 @@ namespace OBS_Sistemi
             InitializeComponent();
         }
 
+        public static int DersIslemID;
+
         private void Btn_DersEkle_Click(object sender, EventArgs e)
         {
             if (Txt_DersAdi.Text != "" && Txt_DersId.Text != "")
@@ -66,15 +68,6 @@ namespace OBS_Sistemi
             Txt_DersSilID.Focus();
         }
 
-        private void Btn_Getir_Click(object sender, EventArgs e)
-        {
-            string item = Universite.Fakulteler[FakulteEkrani.FakulteIslemID].Bolumler[BolumEkrani.BolumIslemID].KayitliOgretimUyeleri[OgretimUyeleriEkrani.HocaIslemID].OuAd;
-            string item2 = Universite.Fakulteler[FakulteEkrani.FakulteIslemID].Bolumler[BolumEkrani.BolumIslemID].KayitliOgretimUyeleri[OgretimUyeleriEkrani.HocaIslemID].OuSoyad;
-            int item3 = Universite.Fakulteler[FakulteEkrani.FakulteIslemID].Bolumler[BolumEkrani.BolumIslemID].KayitliOgretimUyeleri[OgretimUyeleriEkrani.HocaIslemID].OuID;
-            listBox2.Items.Add("Adı :" + " " + item + " " + item2 + " -- " + "ID :" + " " + item3);
-
-        }
-
         private void Btn_Cıkıs_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -95,6 +88,38 @@ namespace OBS_Sistemi
 
                 throw new ArgumentException("Gosterilecek Ders Yok !!");
             }
+        }
+
+        private void Btn_Ileri_Click(object sender, EventArgs e)
+        {
+            if (Txt_Dersİslem.Text != "")
+            {
+                DersIslemID = Convert.ToInt16(Txt_Dersİslem.Text);
+                Ders gereksiz;
+                if (Universite.Fakulteler[FakulteEkrani.FakulteIslemID].Bolumler[BolumEkrani.BolumIslemID].KayitliOgretimUyeleri[OgretimUyeleriEkrani.HocaIslemID].OgretimGorevlisininDersleri.TryGetValue(DersIslemID, out gereksiz)) 
+                {
+                    this.Hide();
+                    OgrenciEkrani o = new OgrenciEkrani();
+                    o.Show();
+                }
+                else
+	            {
+                    MessageBox.Show("İslem yapmak istediginiz ID'ye sahip bir ders yok !!", "Hata", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                }
+
+            }
+
+        }
+
+        private void Btn_OGAta_Click(object sender, EventArgs e)
+        {
+            // Burayı Doldurmalısın !!!!!!!!!!!!!!!!!!!!!!!!!!
+        }
+
+        private void Btn_Bilgilendirme_Click(object sender, EventArgs e)
+        {
+            BilgilendirmeFormu b = new BilgilendirmeFormu();
+            b.Show();
         }
     }
 }

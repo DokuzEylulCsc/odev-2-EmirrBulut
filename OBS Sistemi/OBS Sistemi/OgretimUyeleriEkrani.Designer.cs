@@ -49,6 +49,7 @@
             this.Txt_HocaIslemID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Btn_Cikis = new System.Windows.Forms.Button();
+            this.Btn_Bilgilendirme = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -220,9 +221,9 @@
             // 
             // Btn_Ileri
             // 
-            this.Btn_Ileri.Location = new System.Drawing.Point(548, 293);
+            this.Btn_Ileri.Location = new System.Drawing.Point(493, 293);
             this.Btn_Ileri.Name = "Btn_Ileri";
-            this.Btn_Ileri.Size = new System.Drawing.Size(93, 31);
+            this.Btn_Ileri.Size = new System.Drawing.Size(78, 31);
             this.Btn_Ileri.TabIndex = 12;
             this.Btn_Ileri.Text = "İleri";
             this.Btn_Ileri.UseVisualStyleBackColor = true;
@@ -232,7 +233,7 @@
             // 
             this.Txt_HocaIslemID.Location = new System.Drawing.Point(321, 293);
             this.Txt_HocaIslemID.Name = "Txt_HocaIslemID";
-            this.Txt_HocaIslemID.Size = new System.Drawing.Size(100, 27);
+            this.Txt_HocaIslemID.Size = new System.Drawing.Size(79, 27);
             this.Txt_HocaIslemID.TabIndex = 11;
             // 
             // label5
@@ -246,19 +247,31 @@
             // 
             // Btn_Cikis
             // 
-            this.Btn_Cikis.Location = new System.Drawing.Point(443, 293);
+            this.Btn_Cikis.Location = new System.Drawing.Point(406, 293);
             this.Btn_Cikis.Name = "Btn_Cikis";
-            this.Btn_Cikis.Size = new System.Drawing.Size(86, 31);
+            this.Btn_Cikis.Size = new System.Drawing.Size(71, 31);
             this.Btn_Cikis.TabIndex = 13;
             this.Btn_Cikis.Text = "Cıkıs";
             this.Btn_Cikis.UseVisualStyleBackColor = true;
             this.Btn_Cikis.Click += new System.EventHandler(this.Btn_Cikis_Click);
             // 
+            // Btn_Bilgilendirme
+            // 
+            this.Btn_Bilgilendirme.Location = new System.Drawing.Point(587, 293);
+            this.Btn_Bilgilendirme.Name = "Btn_Bilgilendirme";
+            this.Btn_Bilgilendirme.Size = new System.Drawing.Size(82, 31);
+            this.Btn_Bilgilendirme.TabIndex = 16;
+            this.Btn_Bilgilendirme.Text = "Bilgiler";
+            this.Btn_Bilgilendirme.UseVisualStyleBackColor = true;
+            this.Btn_Bilgilendirme.Click += new System.EventHandler(this.Btn_Bilgilendirme_Click);
+            // 
             // OgretimUyeleriEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(211)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(671, 356);
+            this.Controls.Add(this.Btn_Bilgilendirme);
             this.Controls.Add(this.Btn_Cikis);
             this.Controls.Add(this.Btn_Ileri);
             this.Controls.Add(this.Txt_HocaIslemID);
@@ -270,7 +283,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OgretimUyeleriEkrani";
             this.Text = "OgretimUyeleriEkrani";
-//            this.Load += new System.EventHandler(this.OgretimUyeleriEkrani_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -304,5 +316,6 @@
         private System.Windows.Forms.TextBox Txt_HocaIslemID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Btn_Cikis;
+        private System.Windows.Forms.Button Btn_Bilgilendirme;
     }
 }

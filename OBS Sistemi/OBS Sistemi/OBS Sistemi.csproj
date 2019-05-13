@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BilgilendirmeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgilendirmeFormu.Designer.cs">
+      <DependentUpon>BilgilendirmeFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bolum.cs" />
     <Compile Include="BolumEkrani.cs">
       <SubType>Form</SubType>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Universite.cs" />
     <Compile Include="YuksekLisansOgrencisi.cs" />
+    <EmbeddedResource Include="BilgilendirmeFormu.resx">
+      <DependentUpon>BilgilendirmeFormu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BolumEkrani.resx">
       <DependentUpon>BolumEkrani.cs</DependentUpon>
     </EmbeddedResource>

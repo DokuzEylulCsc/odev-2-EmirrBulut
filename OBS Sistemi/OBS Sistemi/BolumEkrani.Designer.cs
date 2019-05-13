@@ -28,14 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.Btn_Goster = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Lst_BolumunOgr = new System.Windows.Forms.ListBox();
-            this.Lst_BolumunOG = new System.Windows.Forms.ListBox();
             this.Btn_Cıkıs = new System.Windows.Forms.Button();
             this.Btn_Ileri = new System.Windows.Forms.Button();
             this.Txt_Bolumİslem = new System.Windows.Forms.TextBox();
@@ -55,97 +47,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_BolumID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox4.SuspendLayout();
+            this.Btn_Bilgilendirme = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.Btn_Goster);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.Lst_BolumunOgr);
-            this.groupBox4.Controls.Add(this.Lst_BolumunOG);
-            this.groupBox4.Enabled = false;
-            this.groupBox4.Location = new System.Drawing.Point(663, 28);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(352, 322);
-            this.groupBox4.TabIndex = 15;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Bolum Bilgileri";
-            // 
-            // Btn_Goster
-            // 
-            this.Btn_Goster.Location = new System.Drawing.Point(6, 275);
-            this.Btn_Goster.Name = "Btn_Goster";
-            this.Btn_Goster.Size = new System.Drawing.Size(138, 41);
-            this.Btn_Goster.TabIndex = 6;
-            this.Btn_Goster.Text = "Goster";
-            this.Btn_Goster.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 225);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 19);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Ogrenciler";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 206);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 19);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Kayıtlı ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 92);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 19);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Ogretim Uyeleri :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 19);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Kayıtlı";
-            // 
-            // Lst_BolumunOgr
-            // 
-            this.Lst_BolumunOgr.FormattingEnabled = true;
-            this.Lst_BolumunOgr.ItemHeight = 19;
-            this.Lst_BolumunOgr.Location = new System.Drawing.Point(153, 173);
-            this.Lst_BolumunOgr.Name = "Lst_BolumunOgr";
-            this.Lst_BolumunOgr.Size = new System.Drawing.Size(193, 137);
-            this.Lst_BolumunOgr.TabIndex = 1;
-            // 
-            // Lst_BolumunOG
-            // 
-            this.Lst_BolumunOG.FormattingEnabled = true;
-            this.Lst_BolumunOG.ItemHeight = 19;
-            this.Lst_BolumunOG.Location = new System.Drawing.Point(153, 26);
-            this.Lst_BolumunOG.Name = "Lst_BolumunOG";
-            this.Lst_BolumunOG.Size = new System.Drawing.Size(193, 137);
-            this.Lst_BolumunOG.TabIndex = 0;
-            // 
             // Btn_Cıkıs
             // 
-            this.Btn_Cıkıs.Location = new System.Drawing.Point(478, 303);
+            this.Btn_Cıkıs.Location = new System.Drawing.Point(425, 303);
             this.Btn_Cıkıs.Name = "Btn_Cıkıs";
-            this.Btn_Cıkıs.Size = new System.Drawing.Size(158, 38);
+            this.Btn_Cıkıs.Size = new System.Drawing.Size(100, 38);
             this.Btn_Cıkıs.TabIndex = 14;
             this.Btn_Cıkıs.Text = "Cıkıs";
             this.Btn_Cıkıs.UseVisualStyleBackColor = true;
@@ -155,7 +67,7 @@
             // 
             this.Btn_Ileri.Location = new System.Drawing.Point(317, 304);
             this.Btn_Ileri.Name = "Btn_Ileri";
-            this.Btn_Ileri.Size = new System.Drawing.Size(158, 38);
+            this.Btn_Ileri.Size = new System.Drawing.Size(102, 38);
             this.Btn_Ileri.TabIndex = 13;
             this.Btn_Ileri.Text = "İleri";
             this.Btn_Ileri.UseVisualStyleBackColor = true;
@@ -167,7 +79,6 @@
             this.Txt_Bolumİslem.Name = "Txt_Bolumİslem";
             this.Txt_Bolumİslem.Size = new System.Drawing.Size(100, 27);
             this.Txt_Bolumİslem.TabIndex = 12;
-            this.Txt_Bolumİslem.TextChanged += new System.EventHandler(this.Txt_Bolumİslem_TextChanged);
             // 
             // label6
             // 
@@ -324,12 +235,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Bolum ID: ";
             // 
+            // Btn_Bilgilendirme
+            // 
+            this.Btn_Bilgilendirme.Location = new System.Drawing.Point(536, 303);
+            this.Btn_Bilgilendirme.Name = "Btn_Bilgilendirme";
+            this.Btn_Bilgilendirme.Size = new System.Drawing.Size(108, 38);
+            this.Btn_Bilgilendirme.TabIndex = 15;
+            this.Btn_Bilgilendirme.Text = "Bilgiler";
+            this.Btn_Bilgilendirme.UseVisualStyleBackColor = true;
+            this.Btn_Bilgilendirme.Click += new System.EventHandler(this.Btn_Bilgilendirme_Click);
+            // 
             // BolumEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 387);
-            this.Controls.Add(this.groupBox4);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(211)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(671, 387);
+            this.Controls.Add(this.Btn_Bilgilendirme);
             this.Controls.Add(this.Btn_Cıkıs);
             this.Controls.Add(this.Btn_Ileri);
             this.Controls.Add(this.Txt_Bolumİslem);
@@ -341,8 +263,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BolumEkrani";
             this.Text = "BolumEkrani";
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -354,15 +274,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button Btn_Goster;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.ListBox Lst_BolumunOgr;
-        public System.Windows.Forms.ListBox Lst_BolumunOG;
         private System.Windows.Forms.Button Btn_Cıkıs;
         private System.Windows.Forms.Button Btn_Ileri;
         private System.Windows.Forms.TextBox Txt_Bolumİslem;
@@ -382,5 +293,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Txt_BolumID;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Btn_Bilgilendirme;
     }
 }

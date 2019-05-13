@@ -17,9 +17,10 @@ namespace OBS_Sistemi
             InitializeComponent();
         }
 
-        public static int BolumIslemID;
+        public static int BolumIslemID; // Ders ekleme, ogretim uyesi ekleme,ogrenci ekleme islemlerini yapmak ıstedıgımız bolumun ıdsini static tutuyoruz cunku
+        // diger formlardan sabit olarak ıslem yapmak ıstedıgımız bolume ulasabilmemiz gerekiyor. Dolayısıyla bu bolumu statıc tutarak hep bu bolume ulasabılıyoruz.
 
-        private void Btn_BolumEkle_Click(object sender, EventArgs e)
+        private void Btn_BolumEkle_Click(object sender, EventArgs e) // Bolum ekleme butonu
         {
             if (Txt_BolumID.Text != "" && Txt_BolumAdi.Text != "")
             {
@@ -38,7 +39,7 @@ namespace OBS_Sistemi
             Txt_BolumID.Focus();
         }
 
-        private void Btn_BolumleriGoster_Click(object sender, EventArgs e)
+        private void Btn_BolumleriGoster_Click(object sender, EventArgs e) // Kayıtlı bolumlerı gosterebılme butonu
         {
             Lst_KayitliBolumler.Items.Clear();
             try
@@ -55,7 +56,7 @@ namespace OBS_Sistemi
             }
         }
 
-        private void Btn_BolumSil_Click(object sender, EventArgs e)
+        private void Btn_BolumSil_Click(object sender, EventArgs e) // Bolum sılebilmek icin basılması gereken buton
         {
             try
             {
@@ -72,7 +73,7 @@ namespace OBS_Sistemi
             }
         }
 
-        private void Btn_TekrarBolumSil_Click(object sender, EventArgs e)
+        private void Btn_TekrarBolumSil_Click(object sender, EventArgs e) // Tekrar bolum sılme islemi 
         {
             Txt_BolumSil.Text = "";
             Txt_BolumSil.Focus();
@@ -83,13 +84,9 @@ namespace OBS_Sistemi
             Application.Exit();
         }
 
-        private void Txt_Bolumİslem_TextChanged(object sender, EventArgs e)
-        {
-            groupBox4.Enabled = true;
-            Btn_Ileri.Enabled = true;
-        }
+        
 
-        private void Btn_Ileri_Click(object sender, EventArgs e)
+        private void Btn_Ileri_Click(object sender, EventArgs e) // Ogretim uyeleri ekranına gecebilme butonu
         {
             if (Txt_Bolumİslem.Text != "")
             {
@@ -110,6 +107,12 @@ namespace OBS_Sistemi
             {
                 MessageBox.Show("Once Islem yapılacak Bolumu secmelisiniz", "Uyarı", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
             }
+        }
+
+        private void Btn_Bilgilendirme_Click(object sender, EventArgs e)
+        {
+            BilgilendirmeFormu b = new BilgilendirmeFormu();
+            b.Show();
         }
     }
 }

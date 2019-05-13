@@ -34,6 +34,10 @@
             this.Txt_OgrenciSilID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Btn_TekrarEkle = new System.Windows.Forms.Button();
+            this.Rd_Doktora = new System.Windows.Forms.RadioButton();
+            this.Rd_Yuksek = new System.Windows.Forms.RadioButton();
+            this.Rd_Lisans = new System.Windows.Forms.RadioButton();
             this.Btn_OgrenciEkle = new System.Windows.Forms.Button();
             this.Txt_OgrenciBolumu = new System.Windows.Forms.TextBox();
             this.Txt_OgrenciSoyadi = new System.Windows.Forms.TextBox();
@@ -43,18 +47,17 @@
             this.Txt_OgrenciID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Rd_Lisans = new System.Windows.Forms.RadioButton();
-            this.Rd_Yuksek = new System.Windows.Forms.RadioButton();
-            this.Rd_Doktora = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Btn_Bilgilendirme = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Btn_Cıkıs
             // 
-            this.Btn_Cıkıs.Location = new System.Drawing.Point(218, 347);
+            this.Btn_Cıkıs.Location = new System.Drawing.Point(157, 347);
             this.Btn_Cıkıs.Name = "Btn_Cıkıs";
-            this.Btn_Cıkıs.Size = new System.Drawing.Size(82, 41);
+            this.Btn_Cıkıs.Size = new System.Drawing.Size(100, 41);
             this.Btn_Cıkıs.TabIndex = 12;
             this.Btn_Cıkıs.Text = "Cıkıs ";
             this.Btn_Cıkıs.UseVisualStyleBackColor = true;
@@ -80,6 +83,7 @@
             this.Btn_OgrenciSil.TabIndex = 9;
             this.Btn_OgrenciSil.Text = "Sil";
             this.Btn_OgrenciSil.UseVisualStyleBackColor = true;
+            this.Btn_OgrenciSil.Click += new System.EventHandler(this.Btn_OgrenciSil_Click);
             // 
             // Txt_OgrenciSilID
             // 
@@ -99,6 +103,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Btn_TekrarEkle);
             this.groupBox1.Controls.Add(this.Rd_Doktora);
             this.groupBox1.Controls.Add(this.Rd_Yuksek);
             this.groupBox1.Controls.Add(this.Rd_Lisans);
@@ -118,14 +123,58 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ogrenci Ekle";
             // 
+            // Btn_TekrarEkle
+            // 
+            this.Btn_TekrarEkle.Location = new System.Drawing.Point(143, 144);
+            this.Btn_TekrarEkle.Name = "Btn_TekrarEkle";
+            this.Btn_TekrarEkle.Size = new System.Drawing.Size(82, 37);
+            this.Btn_TekrarEkle.TabIndex = 12;
+            this.Btn_TekrarEkle.Text = "Tekrar";
+            this.Btn_TekrarEkle.UseVisualStyleBackColor = true;
+            this.Btn_TekrarEkle.Click += new System.EventHandler(this.Btn_TekrarEkle_Click);
+            // 
+            // Rd_Doktora
+            // 
+            this.Rd_Doktora.AutoSize = true;
+            this.Rd_Doktora.Location = new System.Drawing.Point(312, 115);
+            this.Rd_Doktora.Name = "Rd_Doktora";
+            this.Rd_Doktora.Size = new System.Drawing.Size(83, 23);
+            this.Rd_Doktora.TabIndex = 11;
+            this.Rd_Doktora.TabStop = true;
+            this.Rd_Doktora.Text = "Doktora";
+            this.Rd_Doktora.UseVisualStyleBackColor = true;
+            // 
+            // Rd_Yuksek
+            // 
+            this.Rd_Yuksek.AutoSize = true;
+            this.Rd_Yuksek.Location = new System.Drawing.Point(176, 115);
+            this.Rd_Yuksek.Name = "Rd_Yuksek";
+            this.Rd_Yuksek.Size = new System.Drawing.Size(117, 23);
+            this.Rd_Yuksek.TabIndex = 10;
+            this.Rd_Yuksek.TabStop = true;
+            this.Rd_Yuksek.Text = "Yuksek Lisans";
+            this.Rd_Yuksek.UseVisualStyleBackColor = true;
+            // 
+            // Rd_Lisans
+            // 
+            this.Rd_Lisans.AutoSize = true;
+            this.Rd_Lisans.Location = new System.Drawing.Point(79, 115);
+            this.Rd_Lisans.Name = "Rd_Lisans";
+            this.Rd_Lisans.Size = new System.Drawing.Size(67, 23);
+            this.Rd_Lisans.TabIndex = 9;
+            this.Rd_Lisans.TabStop = true;
+            this.Rd_Lisans.Text = "Lisans";
+            this.Rd_Lisans.UseVisualStyleBackColor = true;
+            // 
             // Btn_OgrenciEkle
             // 
-            this.Btn_OgrenciEkle.Location = new System.Drawing.Point(186, 155);
+            this.Btn_OgrenciEkle.Location = new System.Drawing.Point(245, 144);
             this.Btn_OgrenciEkle.Name = "Btn_OgrenciEkle";
             this.Btn_OgrenciEkle.Size = new System.Drawing.Size(82, 37);
             this.Btn_OgrenciEkle.TabIndex = 8;
             this.Btn_OgrenciEkle.Text = "Ekle";
             this.Btn_OgrenciEkle.UseVisualStyleBackColor = true;
+            this.Btn_OgrenciEkle.Click += new System.EventHandler(this.Btn_OgrenciEkle_Click);
             // 
             // Txt_OgrenciBolumu
             // 
@@ -191,44 +240,34 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ogrenci ID :";
             // 
-            // Rd_Lisans
+            // label6
             // 
-            this.Rd_Lisans.AutoSize = true;
-            this.Rd_Lisans.Location = new System.Drawing.Point(79, 115);
-            this.Rd_Lisans.Name = "Rd_Lisans";
-            this.Rd_Lisans.Size = new System.Drawing.Size(67, 23);
-            this.Rd_Lisans.TabIndex = 9;
-            this.Rd_Lisans.TabStop = true;
-            this.Rd_Lisans.Text = "Lisans";
-            this.Rd_Lisans.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(454, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 19);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "label6";
+            this.label6.Visible = false;
             // 
-            // Rd_Yuksek
+            // Btn_Bilgilendirme
             // 
-            this.Rd_Yuksek.AutoSize = true;
-            this.Rd_Yuksek.Location = new System.Drawing.Point(176, 115);
-            this.Rd_Yuksek.Name = "Rd_Yuksek";
-            this.Rd_Yuksek.Size = new System.Drawing.Size(117, 23);
-            this.Rd_Yuksek.TabIndex = 10;
-            this.Rd_Yuksek.TabStop = true;
-            this.Rd_Yuksek.Text = "Yuksek Lisans";
-            this.Rd_Yuksek.UseVisualStyleBackColor = true;
-            // 
-            // Rd_Doktora
-            // 
-            this.Rd_Doktora.AutoSize = true;
-            this.Rd_Doktora.Location = new System.Drawing.Point(312, 115);
-            this.Rd_Doktora.Name = "Rd_Doktora";
-            this.Rd_Doktora.Size = new System.Drawing.Size(83, 23);
-            this.Rd_Doktora.TabIndex = 11;
-            this.Rd_Doktora.TabStop = true;
-            this.Rd_Doktora.Text = "Doktora";
-            this.Rd_Doktora.UseVisualStyleBackColor = true;
+            this.Btn_Bilgilendirme.Location = new System.Drawing.Point(277, 348);
+            this.Btn_Bilgilendirme.Name = "Btn_Bilgilendirme";
+            this.Btn_Bilgilendirme.Size = new System.Drawing.Size(108, 38);
+            this.Btn_Bilgilendirme.TabIndex = 16;
+            this.Btn_Bilgilendirme.Text = "Bilgiler";
+            this.Btn_Bilgilendirme.UseVisualStyleBackColor = true;
+            this.Btn_Bilgilendirme.Click += new System.EventHandler(this.Btn_Bilgilendirme_Click);
             // 
             // OgrenciEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(211)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(536, 405);
+            this.Controls.Add(this.Btn_Bilgilendirme);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.Btn_Cıkıs);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -241,6 +280,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -264,5 +304,8 @@
         private System.Windows.Forms.TextBox Txt_OgrenciID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button Btn_TekrarEkle;
+        private System.Windows.Forms.Button Btn_Bilgilendirme;
     }
 }

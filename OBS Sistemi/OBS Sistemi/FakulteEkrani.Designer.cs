@@ -43,6 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Btn_Bilgilendirme = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -191,11 +192,23 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "29 EKİM UNİVERSİTESİ";
             // 
+            // Btn_Bilgilendirme
+            // 
+            this.Btn_Bilgilendirme.Location = new System.Drawing.Point(364, 307);
+            this.Btn_Bilgilendirme.Name = "Btn_Bilgilendirme";
+            this.Btn_Bilgilendirme.Size = new System.Drawing.Size(108, 32);
+            this.Btn_Bilgilendirme.TabIndex = 16;
+            this.Btn_Bilgilendirme.Text = "Bilgiler";
+            this.Btn_Bilgilendirme.UseVisualStyleBackColor = true;
+            this.Btn_Bilgilendirme.Click += new System.EventHandler(this.Btn_Bilgilendirme_Click);
+            // 
             // FakulteEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(211)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(834, 362);
+            this.Controls.Add(this.Btn_Bilgilendirme);
             this.Controls.Add(this.Btn_Cıkıs);
             this.Controls.Add(this.Btn_Ileri);
             this.Controls.Add(this.Txt_IslemId);
@@ -204,6 +217,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FakulteEkrani";
             this.Text = "Form1";
@@ -232,6 +246,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ListBox FakultelerListesi;
+        private System.Windows.Forms.Button Btn_Bilgilendirme;
     }
 }
 
